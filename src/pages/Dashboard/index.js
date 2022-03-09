@@ -5,7 +5,7 @@ function Dashboard({hiredPeople}) {
 
 	const [people, setPeople] = useState([]);
 
-	console.log(people);
+	console.log('Looking here: ', people);
 
 	useEffect(() => {
 		fetch('https://randomuser.me/api?results=50')
