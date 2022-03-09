@@ -1,5 +1,4 @@
-function PeopleListItem(props) {
-  const { person } = props
+function PeopleListItem({person}) {
 
   return (
     <li>
