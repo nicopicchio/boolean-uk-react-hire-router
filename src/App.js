@@ -1,7 +1,6 @@
 import { useState } from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
 import './styles.css';
-import { Routes, Route } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 import Dashboard from './pages/Dashboard/index';
 
 export default function App() {
@@ -21,6 +20,7 @@ export default function App() {
 			</header>
 			<Routes>
 				<Route path="/" element={<Dashboard hiredPeople={hiredPeople} />} />
+				<Route path="/view/:id" element={<Dashboard hiredPeople={hiredPeople} />} />
 			</Routes>
 		</>
 	);

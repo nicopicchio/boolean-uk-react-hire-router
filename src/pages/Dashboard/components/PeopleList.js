@@ -6,7 +6,7 @@ function PeopleList({people}) {
     <ul>
       {people.map((person, index) => (
         <PeopleListItem key={index} person={person} />
-      ))}
+        ))}
     </ul>
   )
 }
